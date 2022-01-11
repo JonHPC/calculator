@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+        <div class="container">
+            <div class="screen">
+                <p id="lastScreenText"></p>
+                <p id="screenText">0</p>
+            </div>
+            <div class="buttons">
+                <button id="clearBtn" class="btn-lightgry span-2" :hover :active>AC</button>
+                <button id="deleteBtn" class="btn-lightgry" :hover :active>DEL</button>
+                <button class="btn btn-yellow" :hover :active data-operator>÷</button>
+                
+                <button class="btn" :hover :active data-num>7</button>
+                <button class="btn" :hover :active data-num>8</button>
+                <button class="btn" :hover :active data-num>9</button>
+                <button class="btn btn-yellow" :hover :active data-operator>x</button>
+
+                <button class="btn" :hover :active data-num>4</button>
+                <button class="btn" :hover :active data-num>5</button>
+                <button class="btn" :hover :active data-num>6</button>
+                <button class="btn btn-yellow" :hover :active data-operator>-</button>
+
+                <button class="btn" :hover :active data-num>1</button>
+                <button class="btn" :hover :active data-num>2</button>
+                <button class="btn" :hover :active data-num>3</button>
+                <button class="btn btn-yellow" :hover :active data-operator>+</button>
+
+                
+                <button class="btn span-2" :hover :active data-num>0</button>
+                <button id="decimalBtn" class="btn" :hover :active>.</button>
+                <button id="equalBtn" class="btn btn-yellow" :hover :active>=</button>
+
+                
+            </div>
+        </div>
+        <div class="footer"> Copyright © 2022 Jonathan Chen</div>
+    </body>
+
+    <script src="script.js"></script>
+</html>
